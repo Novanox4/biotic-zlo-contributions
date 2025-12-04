@@ -62,6 +62,7 @@ ammoTypes: {
     frontColor: c1dae3
     backColor: c1dae3
 	hitColor: c1dae3
+	despawnEffect: none
 	despawnHit: true
 	hitEffect: [
 	  	{
@@ -76,6 +77,21 @@ ammoTypes: {
 	  	layer: 100.2
 	  	sides: 4
   		}
+		{
+		type: ParticleEffect
+    	particles: 6
+    	lifetime: 37.5
+    	layer: 100.2
+    	cone: 180
+    	length: 50
+    	interp: pow10Out
+    	strokeFrom: 2.25
+    	strokeTo: 0
+		lenFrom: 4
+		lenTo: 2
+    	colorFrom: c1dae3
+    	colorTo: 8fa9b3
+		}
 	]
     shootEffect: {
     	type: ParticleEffect

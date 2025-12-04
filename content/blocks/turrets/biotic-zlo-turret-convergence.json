@@ -80,18 +80,19 @@ ammoTypes: {
 		{
 		type: ParticleEffect
     	particles: 6
-    	lifetime: 37.5
+    	lifetime: 55
     	layer: 100.2
     	cone: 180
     	length: 13.5
     	interp: pow10Out
-    	strokeFrom: 2.25
+    	strokeFrom: 2.85
     	strokeTo: 0
-		lenFrom: 4
-		lenTo: 2
+		lenFrom: 4.5
+		lenTo: 4.5
     	colorFrom: c1dae3
     	colorTo: 8fa9b3
 		line: true
+		sizeChangeStart: 12.5
 		}
 	]
     shootEffect: {

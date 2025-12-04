@@ -83,16 +83,16 @@ ammoTypes: {
 			}
 			{
 				type: WaveEffect
-				layer: 100.2
+				layer: 111
 				sides: 6
 				interp: pow4Out
 				strokeFrom: 3
-				strokeTo: 0
-	    		colorFrom: c1dae3
-    	 		colorTo: 8fa9b3
+				strokeTo: 3
+	    		colorFrom: c1dae399
+    	 		colorTo: 8fa9b300
 				lifetime: 60
 				sizeFrom: 0
-				sizeTo: 47.5
+				sizeTo: 20
 			}
 		]
 	}

@@ -70,29 +70,30 @@ ammoTypes: {
 	  	colorFrom: c1dae399
 	  	colorTo: c1dae399
 	  	sizeFrom: 0
-		sizeTo: 16
-	  	strokeFrom: 3
+		sizeTo: 18
+	  	strokeFrom: 2
 	  	strokeTo: 0
 	  	interp: pow5Out
-	  	layer: 99
+	  	layer: 100.2
 	  	sides: 4
+	  	lifetime: 30
   		}
 		{
 		type: ParticleEffect
     	particles: 6
-    	lifetime: 55
-    	layer: 99
+    	lifetime: 27
+    	layer: 100.2
     	cone: 180
-    	length: 13.5
+    	length: 15
     	interp: pow10Out
-    	strokeFrom: 2.85
+    	strokeFrom: 1.2
     	strokeTo: 0
-		lenFrom: 4.5
-		lenTo: 4.5
+		lenFrom: 3
+		lenTo: 3
     	colorFrom: c1dae3
     	colorTo: 8fa9b3
 		line: true
-		sizeChangeStart: 12.5
+		sizeChangeStart: 2
 		lightOpacity: 0
 		}
 	]

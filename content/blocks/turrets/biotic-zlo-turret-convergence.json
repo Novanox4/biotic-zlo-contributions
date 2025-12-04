@@ -93,6 +93,7 @@ ammoTypes: {
     	colorTo: 8fa9b3
 		line: true
 		sizeChangeStart: 12.5
+		lightOpacity: 0
 		}
 	]
     shootEffect: {

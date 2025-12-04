@@ -83,7 +83,7 @@ ammoTypes: {
     	lifetime: 37.5
     	layer: 100.2
     	cone: 180
-    	length: 50
+    	length: 13.5
     	interp: pow10Out
     	strokeFrom: 2.25
     	strokeTo: 0
@@ -91,6 +91,7 @@ ammoTypes: {
 		lenTo: 2
     	colorFrom: c1dae3
     	colorTo: 8fa9b3
+		line: true
 		}
 	]
     shootEffect: {

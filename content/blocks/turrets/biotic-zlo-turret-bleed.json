@@ -83,7 +83,7 @@ ammoTypes: {
 			}
 			{
 				type: WaveEffect
-				layer: 111
+				layer: 100.2
 				sides: 6
 				interp: pow4Out
 				strokeFrom: 3

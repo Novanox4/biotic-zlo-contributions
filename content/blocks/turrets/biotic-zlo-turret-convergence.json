@@ -62,13 +62,14 @@ ammoTypes: {
     frontColor: c1dae3
     backColor: c1dae3
 	hitColor: c1dae3
+	despawnHit: true
 	hitEffect: [
 	  	{
 	  	type: WaveEffect
-	  	colorFrom: c1dae3cc
-	  	colorTo: c1dae3cc
+	  	colorFrom: c1dae399
+	  	colorTo: c1dae399
 	  	sizeFrom: 0
-		sizeTo: 24
+		sizeTo: 16
 	  	strokeFrom: 3
 	  	strokeTo: 0
 	  	interp: pow5Out

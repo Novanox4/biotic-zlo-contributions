@@ -62,6 +62,20 @@ ammoTypes: {
     frontColor: c1dae3
     backColor: c1dae3
 	hitColor: c1dae3
+	hitEffect: [
+	  	{
+	  	type: WaveEffect
+	  	colorFrom: c1dae3cc
+	  	colorTo: c1dae3cc
+	  	sizeFrom: 0
+		sizeTo: 24
+	  	strokeFrom: 3
+	  	strokeTo: 0
+	  	interp: pow5Out
+	  	layer: 100.2
+	  	sides: 4
+  		}
+	]
     shootEffect: {
     	type: ParticleEffect
     	particles: 20

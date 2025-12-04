@@ -74,14 +74,14 @@ ammoTypes: {
 	  	strokeFrom: 3
 	  	strokeTo: 0
 	  	interp: pow5Out
-	  	layer: 100.2
+	  	layer: 99
 	  	sides: 4
   		}
 		{
 		type: ParticleEffect
     	particles: 6
     	lifetime: 55
-    	layer: 100.2
+    	layer: 99
     	cone: 180
     	length: 13.5
     	interp: pow10Out
@@ -114,7 +114,7 @@ ammoTypes: {
 			type: ParticleEffect
     		particles: 2
     		lifetime: 70
-    		layer: 100.2
+    		layer: 99
     		cone: -6
     		length: 70
     		interp: pow5Out
@@ -127,7 +127,7 @@ ammoTypes: {
 			type: ParticleEffect
     		particles: 1
     		lifetime: 120
-    		layer: 100.2
+    		layer: 99
     		cone: -10
     		length: 60
     		interp: pow5Out

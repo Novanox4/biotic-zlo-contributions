@@ -50,7 +50,8 @@ deathExplosionEffect: {
         {
             type: ParticleEffect
             particles: 1
-            layer: 110
+            //what's 9+10
+            layer: 21
             colorFrom: ffffff
             colorTo: ffffff
             cone: 360
@@ -159,6 +160,7 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+
 
 
 

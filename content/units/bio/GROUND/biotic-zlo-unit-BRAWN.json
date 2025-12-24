@@ -20,6 +20,8 @@ deathExplosionEffect: {
             length: 15
             sizeFrom: 4
             sizeTo: 0
+            interp: pow3Out
+            lifetime: 50
         }   
         {
             type: ParticleEffect
@@ -31,6 +33,8 @@ deathExplosionEffect: {
             length: 15
             sizeFrom: 2
             sizeTo: 0
+            interp: pow3Out
+            lifetime: 50
         }
     ] 
 }
@@ -129,3 +133,4 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+

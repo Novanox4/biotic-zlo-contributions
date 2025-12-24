@@ -60,7 +60,7 @@ deathExplosionEffect: {
             interp: pow10out
             lifetime: 680
             sizeChangeStart: 180
-            region: "biotic-zlo-bone-shard"
+            region: "corpuscles-biotic-zlo-bone-shard"
         }
     ] 
 }
@@ -159,6 +159,7 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+
 
 
 

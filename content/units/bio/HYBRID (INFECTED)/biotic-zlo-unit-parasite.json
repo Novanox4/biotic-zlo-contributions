@@ -23,6 +23,9 @@ legLengthScl: 0.95
 legPhysicsLayer: false
 legStraightness: 0
 allowLegStep: true
+stepSound: walkerStepSmall
+stepSoundPitch: 0.90
+stepSoundVolume: 0.20
 
 abilities: [
     {
@@ -39,7 +42,7 @@ weapons: [
         top: false
         inaccuracy: 7
         reload: 75
-        shootSound: missile
+        shootSound: shootAtrax
         name: biotic-zlo-unit-parasite-weapon-0
         shoot: {
             shots: 5
@@ -58,31 +61,15 @@ weapons: [
             hitEffect: none
             smokeEffect: none
             shootEffect: {
-            Type: MultiEffect
-                effects: [  
-                    {
-                        type: ParticleEffect
-                        particles: 10
-                        colorFrom: a33333
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 2
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                    {
-                        type: RadialEffect
-                        particles: 2
-                        colorFrom: 853d3d
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 3
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                ]
+                type: ParticleEffect
+                particles: 10
+                colorFrom: a33333
+                colorTo: 33001b
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
             }   
         }
     } 
@@ -95,13 +82,13 @@ weapons: [
         inaccuracy: 7
         reload: 8
         recoil: 0.3
-        shootSound: mud
+        shootSound: stepMud
         name: biotic-zlo-unit-parasite-weapon-1
         bullet: {
             type: LiquidBulletType
             status: status-dissolving
             width: 2
-            damage: 25
+            damage: 28
             pierceCap: 1
             range: 52
             liquid: biotic-zlo-liquid-acid

@@ -1,0 +1,246 @@
+type: legs
+speed: 0.8
+flying: false
+health: 1000
+armor: 3
+hitSize: 24
+outlineColor: 1b1a33
+mechLegColor: 1b1a33
+stepSound: walkerStepSmall
+stepSoundPitch: 0.7
+stepSoundVolume: 0.4
+deathExplosionEffect: {
+    type: MultiEffect
+        effects: [
+        {
+            type: ParticleEffect
+            particles: 3
+            colorFrom: 007020
+            colorTo: 014214
+            cone: 360
+            length: 15
+            sizeFrom: 6.5
+            sizeTo: 0
+        }   
+        {
+            type: ParticleEffect
+            particles: 2
+            layer: 110
+            colorFrom: 50ff36
+            colorTo: 50ff36
+            cone: 360
+            length: 15
+            sizeFrom: 5
+            sizeTo: 0
+        }
+    ] 
+}
+
+
+type: legs
+legCount: 4
+lockLegBase: true
+legExtension: 4.5
+legBaseOffset: 3
+legLength: 38
+legMaxLength: 1.1
+legMinLength: 0.2
+legSpeed: 0.25
+legGroupSize: 3
+legForwardScl: 1.05
+legLengthScl: 0.95
+legPhysicsLayer: false
+legStraightness: 0
+allowLegStep: true
+legContinuousMove: true
+
+abilities: [
+    {
+        type: RegenAbility
+        percentAmount: 0.05
+    }
+]
+
+weapons: [
+    {
+        x: 6
+        y: 3
+        rotate: false
+        mirror: false
+        inaccuracy: 7
+        reload: 8
+        recoil: 0.3
+        shootSound: stepMud
+        bullet: {
+            type: LiquidBulletType
+            width: 2
+            damage: 28
+            pierceCap: 1
+            range: 20
+            liquid: biotic-zlo-liquid-acid
+            orbSize: 3
+            puddleSize: 15
+            speed: 1.6
+            shootEffect: {
+                Type: MultiEffect
+                effects: [  
+                    {
+                        type: ParticleEffect
+                        particles: 10
+                        layer: 110
+                        colorFrom: 50ff36
+                        colorTo: 50ff36
+                        cone: 360
+                        length: 12
+                        sizeFrom: 2
+                        sizeTo: 0
+                    }         
+                ]       
+            }
+        }
+    }
+    {
+        x: -5
+        y: 5
+        rotate: false
+        mirror: false
+        inaccuracy: 7
+        reload: 12
+        recoil: 0.3
+        shootSound: stepMud
+        bullet: {
+            type: LiquidBulletType
+            width: 2
+            damage: 35
+            pierceCap: 1
+            range: 100
+            lifetime: 60
+            liquid: biotic-zlo-liquid-acid
+            orbSize: 5
+            puddleSize: 15
+            speed: 1.5
+            shootEffect: {
+                Type: MultiEffect
+                effects: [  
+                    {
+                        type: ParticleEffect
+                        particles: 10
+                        layer: 110
+                        colorFrom: 50ff36
+                        colorTo: 50ff36
+                        cone: 360
+                        length: 12
+                        sizeFrom: 2
+                        sizeTo: 0
+                    }         
+                ]       
+            }
+        }
+    }
+    {
+        x: -2
+        y: -7
+        rotate: false
+        mirror: false
+        inaccuracy: 6
+        reload: 50
+        recoil: 0.3
+        shootSound: shootArtillerySmall
+        name: biotic-zlo-unit-horrid-weapon-0
+        bullet: {
+            type: ArtilleryBulletType
+            sprite: corpuscles-biotic-zlo-cystbomb
+            shrinkY: 0
+            trailColor: 6e7d66
+            trailLength: 12
+            trailWidth: 3
+            layer: 90
+            speed: 2
+            lightRadius: -1
+            lightOpacity: 0
+            range: 220
+            height: 20
+            lifetime: 110
+            width: 20
+            splashDamage: 100
+            splashDamageRadius: 20
+            hitEffect: none
+            smokeEffect: none
+            trailEffect:  {
+                type: WaveEffect
+                particles: 20
+                colorFrom: 97ad8c
+                colorTo: 6e7d66
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
+                lightRadius: -1
+                lightOpacity: 0
+            }
+            shootEffect: {
+                Type: MultiEffect
+                effects: [  
+                    {
+                        type: ParticleEffect
+                        particles: 20
+                        colorFrom: 97ad8c
+                        colorTo: 6e7d66
+                        cone: 4
+                        length: 12
+                        sizeFrom: 2
+                        sizeTo: 0
+                        layer: 99
+                    }
+                    {
+                        type: WaveEffect
+                        particles: 2
+                        colorFrom: 6e7d66
+                        colorTo: 616e5a
+                        cone: 4
+                        length: 12
+                        sizeFrom: 3
+                        sizeTo: 9
+                        layer: 99
+                    }
+                ]       
+            }
+        }
+    }
+    {
+        display: false
+        controllable: false
+        aiControllable: false
+        x: 0
+        y: 0
+        rotate: false
+        mirror: false
+        inaccuracy: 0
+        shootCone: 180
+        shoot:{
+            shots: 5
+        }
+        reload: 1
+        shootSound: none
+        shootOnDeath: true
+        bullet: {
+            type: EmptyBulletType
+            despawnHit: true
+            collides: true
+            layer: 90
+            damage: 0
+            lifetime: 0
+            hitEffect: none
+            smokeEffect: none
+            shootEffect: none
+            puddles: 6
+            puddleRange: 30
+            puddleAmount: 60
+            puddleLiquid: corpuscles-biotic-zlo-liquid-acid
+        }  
+    }
+]
+
+
+hiddenOnPlanets: [serpulo, erekir]

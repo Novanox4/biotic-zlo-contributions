@@ -6,6 +6,9 @@ armor: 3
 hitSize: 10
 outlineColor: 1b1a33
 mechLegColor: 1b1a33
+stepSound: walkerStepSmall
+stepSoundPitch: 0.95
+stepSoundVolume: 0.3
 deathExplosionEffect: {
     type: MultiEffect
         effects: [
@@ -67,7 +70,7 @@ weapons: [
         inaccuracy: 7
         reload: 10
         recoil: 0.3
-        shootSound: mud
+        shootSound: stepMud
         bullet: {
             type: LiquidBulletType
             width: 2
@@ -104,7 +107,7 @@ weapons: [
         inaccuracy: 7
         reload: 10
         recoil: 0.3
-        shootSound: mud
+        shootSound: stepMud
         bullet: {
             type: LiquidBulletType
             width: 2

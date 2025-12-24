@@ -2,7 +2,7 @@ type: crawl
 speed: 0.85
 flying: false
 health: 640
-armor: 8
+armor: 5
 hitSize: 24
 outlineColor: 1b1a33
 segments: 3
@@ -66,6 +66,7 @@ weapons: [
      {
         x: 0
         y: -3
+        shootY: 1
         rotate: true
         rotateSpeed: 45
         mirror: false
@@ -73,11 +74,10 @@ weapons: [
         reload: 24
         name: biotic-zlo-unit-ventral-weapon-0
         recoil: 0.3
-        shootSound: missile
+        shootSound: shootAtrax
         shoot: {
-            type: ShootSpread
             shots: 3
-            spread: 5
+            shotDelay: 5
         }
         bullet: {
             type: MissileBulletType
@@ -93,32 +93,16 @@ weapons: [
             hitEffect: none
             smokeEffect: none
             shootEffect: {
-            Type: MultiEffect
-                effects: [  
-                    {
-                        type: ParticleEffect
-                        particles: 10
-                        colorFrom: a33333
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 2
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                    {
-                        type: RadialEffect
-                        particles: 2
-                        colorFrom: 853d3d
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 3
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                ]
-            }   
+                type: ParticleEffect
+                particles: 10
+                colorFrom: a33333
+                colorTo: 33001b
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
+            }
         }
     }
     {

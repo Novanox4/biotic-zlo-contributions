@@ -1,0 +1,114 @@
+type: ItemTurret
+size: 2
+squareSprite: false
+health: 600
+shootSound: shootAtrax
+hasItems: true
+hasPower: false
+hasLiquids: false
+requirements: []
+placeablePlayer: false
+drawTeamOverlay: false
+buildVisibility: editorOnly
+
+recoil: 0.5
+outlineColor: 1b1a33
+targetAir: true
+targetGround: true
+rotateSpeed: 10
+reload: 10
+range: 192
+shootY: 2
+
+ammoPerShot: 2
+ammoTypes: {
+  biotic-zlo-item-infested-tissue: {
+    type: MissileBulletType
+	  sprite: corpuscles-biotic-zlo-teeth
+    trailColor: 990000
+    trailLength: 10
+    layer: 90
+    damage: 30
+    lifetime: 60
+    speed: 2
+    pierceCap: 2
+    lightRadius: -1
+    lightOpacity: 0
+    pierce: true
+    pierceBuilding: true
+    hitEffect: none
+    smokeEffect: none
+    shootEffect: {
+      Type: MultiEffect
+      effects: [  
+        {
+          type: ParticleEffect
+          particles: 10
+          colorFrom: a33333
+          colorTo: 33001b
+          cone: 4
+          length: 12
+          sizeFrom: 2
+          sizeTo: 0
+          lightColor: de3a3a
+        }
+        {
+          type: RadialEffect
+          particles: 2
+          colorFrom: 853d3d
+          colorTo: 33001b
+          cone: 4
+          length: 12
+          sizeFrom: 3
+          sizeTo: 0
+          lightColor: de3a3a
+        }
+      ]
+    }
+  }
+}
+
+drawer: {
+  type: DrawTurret
+  basePrefix: fleshy-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -left
+      progress: warmup
+      moveRot: 10
+      moveX: 0
+      moveY: -0.5
+      under: false
+    }
+    {
+      type: RegionPart
+      suffix: -right
+      progress: warmup
+      moveRot: -9
+      moveX: 0
+      moveY: -0.5
+      under: false
+    }
+    {
+      type: RegionPart
+      suffix: -ARTERY-L
+      progress: warmup
+      moveRot: -20
+      moveX: -6.2
+      moveY: 0.4
+      y: -2
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -ARTERY-R
+      progress: warmup
+      moveRot: 10
+      moveX: 5
+      moveY: 0.4
+      y: -1.75
+      under: true
+    }
+  ]
+}

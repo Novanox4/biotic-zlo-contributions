@@ -1,6 +1,6 @@
 name: "corpuscles"
 displayName: Corpuscles
-author: Bismutotantalite/Biz
+author: SezoVK
 description:
 '''
 A mod that features life.
@@ -13,13 +13,17 @@ If you wanna see whats the latest news with the mod, since modding kinda takes r
 Join our Discord Server!
 discord server for Corpuscles: https://discord.gg/SkvZaCwvXR
 
-Thanks to [blue]HunNimbus[], and [blue]VdobleMSG[] for the some of the sprites!
+Thanks to [blue]HunNimbus[], and [blue]VdobleMSG[] for some of the sprites!
+Available in these languages:
+- English
+- Indonesia
+
 WIP
   
 '''
 subtitle: They will flesh-ing you..
-minGameVersion: 153
-version: v1.2
+minGameVersion: 154.3
+version: v1.3
 repo: TypicalDeveloper123/biotic-zlo
 
 contentOrder:[
@@ -89,6 +93,7 @@ contentOrder:[
         biotic-zlo-component-constructor
         biotic-zlo-mech-unit-station
         biotic-zlo-primary-assembler-module
+        biotic-zlo-secondary-assembler-module
         biotic-zlo-strengthened-payload-conveyor
         biotic-zlo-strengthened-payload-router
 
@@ -100,6 +105,8 @@ contentOrder:[
     // logic blocks
 
     // devorians
+        // turrets
+            biotic-zlo-turret-spear
 
         // unit factories
             nest
@@ -129,14 +136,19 @@ contentOrder:[
                 biotic-zlo-unit-ventral
 
             // air
+                biotic-zlo-unit-pupil
+                biotic-zlo-unit-cornea
+                biotic-zlo-unit-iris
 
             // hybrid
                 biotic-zlo-unit-leech
                 biotic-zlo-unit-parasite
+                biotic-zlo-unit-sycophant
 
             // necrotic/rotten
                 biotic-zlo-unit-vile
                 biotic-zlo-unit-grim
+                biotic-zlo-unit-horrid
 
             // origin of all bio units
                 biotic-zlo-unit-origin
@@ -147,6 +159,7 @@ contentOrder:[
             // ground/mech
                 biotic-zlo-unit-distal
                 biotic-zlo-unit-phalanx
+                biotic-zlo-unit-proximal
 
             // insectoid
 
@@ -168,9 +181,9 @@ contentOrder:[
 
         // walls
             biotic-zlo-wall-BLOODSTONE
-            biotic-zlo-wall-BONE
+            biotic-zlo-wall-DENSE-BONE
             biotic-zlo-wall-COAGULATED-BLOOD
-            biotic-zlo-wall-FLESH
+            biotic-zlo-wall-DENSE-FLESH
 
         // ores
             biotic-zlo-ore-aluminum

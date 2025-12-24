@@ -2,10 +2,13 @@ type: legs
 speed: 0.6
 flying: false
 health: 900
-armor: 10
+armor: 5
 hitSize: 17
 outlineColor: 1b1a33
 mechLegColor: 1b1a33
+stepSound: walkerStepSmall
+stepSoundPitch: 0.9
+stepSoundVolume: 0.3
 deathExplosionEffect: {
     type: MultiEffect
         effects: [
@@ -72,7 +75,7 @@ weapons: [
         mirror: false
         inaccuracy: 5
         reload: 20
-        shootSound: missile
+        shootSound: shootAtrax
         name: biotic-zlo-unit-embroider-weapon-0
         recoil: 0.3
         bullet: {
@@ -89,31 +92,15 @@ weapons: [
             hitEffect: none
             smokeEffect: none
             shootEffect: {
-            Type: MultiEffect
-                effects: [  
-                    {
-                        type: ParticleEffect
-                        particles: 10
-                        colorFrom: a33333
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 2
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                    {
-                        type: RadialEffect
-                        particles: 2
-                        colorFrom: 853d3d
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 3
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                ]
+                type: ParticleEffect
+                particles: 10
+                colorFrom: a33333
+                colorTo: 33001b
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
             }   
         }
     }
@@ -124,7 +111,7 @@ weapons: [
         mirror: false
         inaccuracy: 5
         reload: 20
-        shootSound: missile
+        shootSound: shootAtrax
         name: biotic-zlo-unit-embroider-weapon-0
         recoil: 0.3
         bullet: {
@@ -141,31 +128,15 @@ weapons: [
             hitEffect: none
             smokeEffect: none
             shootEffect: {
-            Type: MultiEffect
-                effects: [  
-                    {
-                        type: ParticleEffect
-                        particles: 10
-                        colorFrom: a33333
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 2
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                    {
-                        type: RadialEffect
-                        particles: 2
-                        colorFrom: 853d3d
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 3
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                ]
+                type: ParticleEffect
+                particles: 10
+                colorFrom: a33333
+                colorTo: 33001b
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
             }   
         }
     }
@@ -176,7 +147,7 @@ weapons: [
         mirror: false
         inaccuracy: 5
         reload: 20
-        shootSound: missile
+        shootSound: shootAtrax
         name: biotic-zlo-unit-embroider-weapon-0
         recoil: 0.3
         bullet: {
@@ -192,32 +163,16 @@ weapons: [
             range: 30
             hitEffect: none
             smokeEffect: none
-            shootEffect: {
-            Type: MultiEffect
-                effects: [  
-                    {
-                        type: ParticleEffect
-                        particles: 10
-                        colorFrom: a33333
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 2
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                    {
-                        type: RadialEffect
-                        particles: 2
-                        colorFrom: 853d3d
-                        colorTo: 33001b
-                        cone: 4
-                        length: 12
-                        sizeFrom: 3
-                        sizeTo: 0
-                        lightColor: de3a3a
-                    }
-                ]
+            shootEffect: {         
+                type: ParticleEffect
+                particles: 10
+                colorFrom: a33333
+                colorTo: 33001b
+                cone: 4
+                length: 12
+                sizeFrom: 2
+                sizeTo: 0
+                layer: 99
             }   
         }
     }
@@ -229,7 +184,7 @@ weapons: [
         inaccuracy: 7
         reload: 10
         recoil: 0.3
-        shootSound: mud
+        shootSound: stepMud
         name: biotic-zlo-unit-embroider-weapon-1
         bullet: {
             type: LiquidBulletType

@@ -1,0 +1,68 @@
+type: mech
+speed: 0.64
+flying: false
+health: 3500
+armor: 6
+hitSize: 13
+outlineColor: 1b1a33
+mechLegColor: 1b1a33
+range: 78
+stepSound: mechStepSmall
+stepSoundPitch: 0.75
+stepSoundVolume: 0.84
+
+abilities: [
+    {
+        type: ShieldArcAbility
+        radius: 20
+        angle: 64
+        regen: 0.28
+        cooldown: 120
+        max: 800
+        y: -10
+        width: 4.5
+        whenShooting: false
+    }
+]
+
+weapons: [
+    {
+        x: -6.6
+        shootY: 5
+        rotate: false
+        mirror: true
+        top: false
+        inaccuracy: 2
+        reload: 30
+        name: biotic-zlo-unit-proximal-weapon-0
+        recoil: 2
+        shootSound: shootFuse
+        shootSoundVolume: 0.5
+        shootStatus: slow
+        bullet: {
+            type: ShrapnelBulletType
+            damage: 135
+            speed: 0
+            length: 65
+            width: 7
+            lifetime: 15
+            hitEffect: none
+            smokeEffect: none
+            toColor: fc4e4e
+            shootEffect: {
+                type: ParticleEffect
+                particles: 10
+                colorFrom: ff8f8f
+                colorTo: ff8f8f
+                cone: 35
+                length: 45
+                sizeFrom: 30
+                sizeTo: 0
+                line: true
+                lifetime: 30
+            }
+        }
+    }   
+]
+
+hiddenOnPlanets: [serpulo, erekir]

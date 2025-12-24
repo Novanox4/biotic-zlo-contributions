@@ -7,6 +7,8 @@ hitSize: 90
 outlineColor: 1b1a33
 mechLegColor: 1b1a33
 groundLayer: 75
+stepSound: walkerStep
+stepSoundVolume: 1.5
 deathExplosionEffect: {
     type: MultiEffect
         effects: [
@@ -130,7 +132,7 @@ weapons: [
         inaccuracy: 2
         reload: 200
         recoil: 0.3
-        shootSound: artillery
+        shootSound: shootArtillerySmall
         shoot: {
             type: ShootSpread
             shots: 3
@@ -165,7 +167,8 @@ weapons: [
                 length: 12
                 sizeFrom: 3
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -179,7 +182,6 @@ weapons: [
                         length: 20
                         sizeFrom: 4
                         sizeTo: 0
-                        lightColor: de3a3a
                     }
                     {
                         type: WaveEffect
@@ -189,7 +191,6 @@ weapons: [
                         length: 12
                         sizeFrom: 6
                         sizeTo: 15
-                        lightColor: de3a3a
                     }
                 ]       
             }
@@ -203,7 +204,7 @@ weapons: [
         inaccuracy: 0
         reload: 250
         recoil: 0.3
-        shootSound: largeCannon
+        shootSound: shootArtillery
         shoot: {    
             type: ShootSpread
             shots: 2
@@ -238,7 +239,8 @@ weapons: [
                 length: 12
                 sizeFrom: 6
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -252,7 +254,6 @@ weapons: [
                         length: 20
                         sizeFrom: 4
                         sizeTo: 0
-                        lightColor: 662626
                     }
                     {
                         type: WaveEffect
@@ -262,7 +263,6 @@ weapons: [
                         length: 20
                         sizeFrom: 10
                         sizeTo: 30
-                        lightColor: 662626
                     }
                 ]       
             }
@@ -279,8 +279,8 @@ weapons: [
         continuous: true
         alwaysContinuous: true
         recoil: 0.3
-        shootSound: torch
-        loopSound: torch
+        shootSound: shootSublimate
+        loopSound: shootSublimate
         bullet: {
             type: ContinuousFlameBulletType
             damage: 60
@@ -291,6 +291,7 @@ weapons: [
             flareLength: 45
             hitEffect: none
             smokeEffect: none
+            lightColor: c3f5bf
             flareColor: 83ff7d
             colors: [
                 83ff7d
@@ -306,7 +307,7 @@ weapons: [
         reload: 8
         name: biotic-zlo-unit-origin-weapon-1
         recoil: 0.3
-        shootSound: mud
+        shootSound: stepMud
         bullet: {
             type: LiquidBulletType
             width: 2
@@ -339,7 +340,7 @@ weapons: [
         inaccuracy: 6
         reload: 50
         recoil: 0.3
-        shootSound: artillery
+        shootSound: shootArtillerySmall
         bullet: {
             type: ArtilleryBulletType
             sprite: corpuscles-biotic-zlo-fleshbomb
@@ -368,7 +369,8 @@ weapons: [
                 length: 12
                 sizeFrom: 2
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -382,7 +384,6 @@ weapons: [
                         length: 12
                         sizeFrom: 2
                         sizeTo: 0
-                        lightColor: de3a3a
                     }
                     {
                         type: WaveEffect
@@ -393,7 +394,6 @@ weapons: [
                         length: 12
                         sizeFrom: 3
                         sizeTo: 9
-                        lightColor: de3a3a
                     }
                 ]       
             }
@@ -407,7 +407,7 @@ weapons: [
         inaccuracy: 6
         reload: 50
         recoil: 0.3
-        shootSound: artillery
+        shootSound: shootArtillerySmall
         bullet: {
             type: ArtilleryBulletType
             sprite: corpuscles-biotic-zlo-fleshbomb
@@ -436,7 +436,8 @@ weapons: [
                 length: 12
                 sizeFrom: 2
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -450,7 +451,6 @@ weapons: [
                         length: 12
                         sizeFrom: 2
                         sizeTo: 0
-                        lightColor: de3a3a
                     }
                     {
                         type: WaveEffect
@@ -461,7 +461,6 @@ weapons: [
                         length: 12
                         sizeFrom: 3
                         sizeTo: 9
-                        lightColor: de3a3a
                     }
                 ]       
             }
@@ -475,7 +474,7 @@ weapons: [
         inaccuracy: 6
         reload: 50
         recoil: 0.3
-        shootSound: artillery
+        shootSound: shootArtillerySmall
         bullet: {
             type: ArtilleryBulletType
             sprite: corpuscles-biotic-zlo-fleshbomb
@@ -504,7 +503,8 @@ weapons: [
                 length: 12
                 sizeFrom: 2
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -518,7 +518,6 @@ weapons: [
                         length: 12
                         sizeFrom: 2
                         sizeTo: 0
-                        lightColor: de3a3a
                     }
                     {
                         type: WaveEffect
@@ -529,7 +528,6 @@ weapons: [
                         length: 12
                         sizeFrom: 3
                         sizeTo: 9
-                        lightColor: de3a3a
                     }
                 ]       
             }
@@ -543,7 +541,7 @@ weapons: [
         inaccuracy: 6
         reload: 50
         recoil: 0.3
-        shootSound: artillery
+        shootSound: shootArtillerySmall
         bullet: {
             type: ArtilleryBulletType
             sprite: corpuscles-biotic-zlo-fleshbomb
@@ -572,7 +570,8 @@ weapons: [
                 length: 12
                 sizeFrom: 2
                 sizeTo: 0
-                lightColor: de3a3a
+                lightRadius: -1
+                lightOpacity: 0
             }
             shootEffect: {
                 Type: MultiEffect
@@ -586,7 +585,6 @@ weapons: [
                         length: 12
                         sizeFrom: 2
                         sizeTo: 0
-                        lightColor: de3a3a
                     }
                     {
                         type: WaveEffect
@@ -597,7 +595,6 @@ weapons: [
                         length: 12
                         sizeFrom: 3
                         sizeTo: 9
-                        lightColor: de3a3a
                     }
                 ]       
             }

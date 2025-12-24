@@ -36,6 +36,17 @@ deathExplosionEffect: {
             interp: pow3Out
             lifetime: 50
         }
+        {
+            type: WaveEffect
+            layer: 110
+            colorFrom: a3333373
+            colorTo: 33001b73
+            sizeFrom: 0
+            sizeTo: 12
+            interp: pow5Out
+            lifetime: 50
+            strokeFrom: 2
+        }
     ] 
 }
 
@@ -133,4 +144,5 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+
 

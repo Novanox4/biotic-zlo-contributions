@@ -47,6 +47,21 @@ deathExplosionEffect: {
             lifetime: 50
             strokeFrom: 2
         }
+        {
+            type: ParticleEffect
+            particles: 1
+            layer: 110
+            colorFrom: ffffff
+            colorTo: ffffff
+            cone: 360
+            length: 10
+            sizeFrom: 2
+            sizeTo: 0
+            interp: pow10out
+            lifetime: 680
+            sizeChangeStart: 180
+            region: "biotic-zlo-bone-shard"
+        }
     ] 
 }
 
@@ -144,5 +159,6 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+
 
 

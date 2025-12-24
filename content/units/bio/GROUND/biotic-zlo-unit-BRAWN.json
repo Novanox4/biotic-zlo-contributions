@@ -134,6 +134,7 @@ weapons: [
             damage: 0
             lifetime: 0
             hitEffect: none
+            despawnEffect: none
             smokeEffect: none
             shootEffect: none
             puddles: 3
@@ -146,6 +147,7 @@ weapons: [
 
 
 hiddenOnPlanets: [serpulo, erekir]
+
 
 
 
